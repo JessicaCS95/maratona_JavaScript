@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maratona JavaScript</title>
+</head>
+<body>
+    <h1><b>Variáveis e Operações Matemáticas</b></h1>
+    <h2>Conversão Graus</h2>
+    <label for="graus">Digite uma temperatura em graus Celsius, depois converta para Fahrenheit:</label>
+    <input type="number" id="graus">
+    <input type="submit" value="Converter" onclick="convertGraus()">
+    <p id="fahrenHeit"></p>
+
+    <h2>Área Retângulo</h2>
+    <label for="baseretangulo">Digite a medida da base do retângulo:</label>
+    <input type="number" id="baseretangulo">
+    <label for="alturaretangulo">Digite a medida da altura do retângulo:</label>
+    <input type="number" id="alturaretangulo">
+    <input type="submit" onclick="calcularArea()" value="Calcular Área">
+    <p id="resultadoArea"></p>
+
+    <h2>Quadrado e Cubo</h2>
+    <label for="quadradoCubo">Digite um número:</label>
+    <input type="number" id="quadradoCubo">
+    <input type="submit" onclick="calcQC()">
+    <p id="resQuadCubo"></p>
+    
+    <h2>Potencia elevada a X</h2>
+    <label for="">Digite 2 números, o resultado será a potência do primeiro número elevado ao segundo número:</label>
+    <input type="number" id="num1">
+    <input type="number" id="num2">
+    <input type="submit" value="Calcular" onclick="calcPE()">
+    <p id="resultadoPotenciaElev"></p>
+
+    <h1>Condicionais</h1>
+
+    <h2>Número entre 1 e 100</h2>
+    <label for="num1a100">Digite um número:</label>
+    <input type="number" id="num1a100">
+    <input type="submit" value="Verificar" onclick="verificarNum()">
+    <p id="resNum1a100"></p>
+
+    <h2>Idade - Criança, Adolescente ou Adulto</h2>
+    <label for="idade">Digite sua idade:</label>
+    <input type="number" id="idade">
+    <input type="submit" value="Verificar" onclick="verificarIdade()">
+    <p id="resIdade"></p>
+
+    <h2>Verificando a quantidade de dias de um mês</h2>
+    <label for="mes">Digite um número de mês (1 a 12):</label>
+    <input type="number" id="mes" min="1" max="12">
+    <input type="submit" value="Verificar" onclick="verificarDias()">
+    <p id="resultadoDias"></p>
+    
+
+    <h2>Verifique se o número é positivo, negativo ou zero:</h2>
+    <label for="numero">Digite um número:</label>
+    <input type="number" id="numero">
+    <input type="submit" value="Verificar" onclick="verificarNumero()">
+    <p id="resultadoNumeros"></p>
+
+    <!-- <h1>Funções</h1>
+    <h2>Divisão entre dois números:</h2>
+    <input type="number" id="num1" placeholder="Digite um número">
+    <input type="number" id="num2" placeholder="Digite outro número">
+    <input type="submit" value="Dividir" onclick="exibirDivisao()">
+    <p id="resultadoDivisao"></p> -->
+
+    <script src="js/script.js" defer></script>
+</body>
+</html>
