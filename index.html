@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>Maratona JavaScript</title>
 </head>
 <body>
@@ -61,12 +62,46 @@
     <input type="submit" value="Verificar" onclick="verificarNumero()">
     <p id="resultadoNumeros"></p>
 
-    <!-- <h1>Funções</h1>
+    <h1>Funções</h1>
     <h2>Divisão entre dois números:</h2>
-    <input type="number" id="num1" placeholder="Digite um número">
-    <input type="number" id="num2" placeholder="Digite outro número">
-    <input type="submit" value="Dividir" onclick="exibirDivisao()">
-    <p id="resultadoDivisao"></p> -->
+    <input type="number" id="numero1" placeholder="Primeiro número">
+    <input type="number" id="numero2" placeholder="Segundo número">
+    <button onclick="calcularDivisao()">Calcular</button>
+    <p id="resultadoDivisao"></p>
+    
+    <h2>Ordenar Lista de Strings</h2>
+    <label>Digite uma lista de palavras separadas por vírgula:</label>
+    <input type="text" id="listaStrings" placeholder="Exemplo: Banana,Maçã,Abacaxi">
+    <button onclick="ordenarLista()">Ordenar</button>
+    <p id="resultado"></p>
+
+    <!-- <h2>Encontrar o Maior Número</h2>
+    <label>Digite uma lista de números separados por vírgula:</label> -->
+   
+    <h2>Inverter String</h2>
+    <label>Digite uma string:</label>
+    <input type="text" id="texto">
+    <button onclick="inverterTexto()">Inverter</button>
+    <p id="resultadoStringInverter"></p>
+
+    <h1>Laços</h1>
+    <h2>Números ímpares de 1 a 100</h2>
+    <input type="submit" id="verificar_numeros" value="Verificar" onclick=" imprimirImpares()">
+    <p id="resnum1a100"></p>
+
+    <h2>Números de 1 a 50 e Múltiplos de 5</h2>
+    <button onclick="imprimirMultiplosDeCinco()">Exibir Números e Múltiplos de 5</button>
+    <p id="resultadoMultiplosDeCinco"></p>
+
+    <h2>Soma de Números</h2>
+    <label for="numeroSoma">Digite um número:</label>
+    <input type="number" id="numeroSoma">
+    <button onclick="calcularSoma()">Calcular</button>
+    <p id="resultadoSoma"></p>
+
+    <h1>Manipulaçao de Objetos</h1>
+    <h2>Quantidade Total em Estoque:</h2>
+    <p id="quantidade-total"></p>
 
     <script src="js/script.js" defer></script>
 </body>

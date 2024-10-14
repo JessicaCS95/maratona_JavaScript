@@ -105,5 +105,99 @@ function verificarNumero() {
 
 //EX1
 
+    function dividirNumeros(numero1, numero2) {
+    if (numero2 === 0) {
+      return "Divisão por zero não é permitida!";
+    } else {
+      return numero1 / numero2;
+    }
+  }
+
+  function calcularDivisao() {
+    const numero1 = parseFloat(document.getElementById('numero1').value);
+    const numero2 = parseFloat(document.getElementById('numero2').value);
+    const resultado = dividirNumeros(numero1, numero2);
+    document.getElementById('resultadoDivisao').innerHTML = 'Resultado: ' + resultado;
+  }
+
+//EX 02
+function ordenarLista() {
+    const lista = document.getElementById('listaStrings').value.split(',');
+    const listaOrdenada = lista.sort();
+    document.getElementById('resultado').innerHTML = 'Lista ordenada: ' + listaOrdenada.join(', ');
+  }
+
+  //EX 03
 
 
+  //EX04
+
+  function inverterString(texto) {
+    return texto.split("").reverse().join("");
+  }
+
+  function inverterTexto() {
+    const texto = document.getElementById('texto').value;
+    const textoInvertido = inverterString(texto);
+    document.getElementById('resultadoStringInverter').innerHTML = 'String invertida: ' + textoInvertido;
+  }
+
+
+//LAÇOS
+
+//EX1
+
+function imprimirImpares() {
+    let resultado = "";
+    for (let i = 1; i <= 100; i++) {
+        if (i % 2 !== 0) {
+            resultado += i + " ";
+        }
+    }
+    document.getElementById("resnum1a100").innerHTML = (resultado)
+}
+
+//EX2
+
+function imprimirMultiplosDeCinco() {
+    let resultado = "";
+    for (let i = 1; i <= 50; i++) {
+        if (i % 5 === 0) {
+            resultado += i + " é múltiplo de 5\n";
+        } else {
+            resultado += i + "\n";
+        }
+    }
+    document.getElementById("resultadoMultiplosDeCinco").innerHTML = (resultado)
+}
+
+//EX 03
+
+function calcularSoma() {
+    let numero = parseInt(document.getElementById("numeroSoma").value);
+    let soma = 0;
+
+    for (let i = 1; i <= numero; i++) {
+      soma += i;
+    }
+
+    document.getElementById("resultadoSoma").innerHTML = `A soma dos números de 1 até ${numero} é: ${soma}`;
+  }
+
+  //Manipulaçao de Objetos
+
+  //EX01
+  const produtos = [
+    { nome: "Camiseta", quantidade: 10 },
+    { nome: "Calça", quantidade: 5},
+    { nome: "Sapato", quantidade: 8}
+  ];
+  function calcularQuantidadeTotalEmEstoque(produtos) {
+    let quantidadeTotal = 0;
+    for (let i = 0; i < produtos.length; i++) {
+      quantidadeTotal += produtos[i].quantidade;
+    }
+    return quantidadeTotal;
+  }
+  const quantidadeTotal = calcularQuantidadeTotalEmEstoque(produtos);
+  document.getElementById("quantidade-total").textContent = quantidadeTotal + " produtos";
